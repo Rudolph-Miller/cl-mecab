@@ -17,7 +17,7 @@
 
 
 (define-foreign-library libmecab
-    (:darwin "libmecab.dylib")
+    (:darwin (:or "libmecab.2.dylib" "libmecab.dylib"))
     (:unix "libmecab.so")
     (:windows "libmecab.dll"))
 
